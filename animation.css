@@ -64,3 +64,67 @@
     border-radius: 30%;
     transform: scale(1.5);
 }
+
+.ex-10-icon {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover {
+    animation-name: spin2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0);
+    }
+    80% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+.ex-12-bottom:hover .ex-12-top-white  {
+    animation-name: topbox 2s linear;
+
+}
+@keyframes topbox {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-bottom:hover .ex-12-bottom-white  {
+    animation: bottombox 2s linear;
+    
+    
+}
+@keyframes bottombox {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
